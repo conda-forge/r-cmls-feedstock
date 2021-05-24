@@ -1,4 +1,6 @@
 {% set version = '1.0-0' %}
+{% set posix = 'm2-' if win else '' %}
+{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-cmls
@@ -33,7 +35,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=CMLS
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Solves multivariate least squares (MLS) problems subject to constraints on the coefficients,
     e.g., non-negativity, orthogonality, equality, inequality, monotonicity, unimodality,
     smoothness, etc. Includes flexible functions for solving MLS problems subject to
@@ -48,10 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - PertuyF
