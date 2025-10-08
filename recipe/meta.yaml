@@ -1,4 +1,4 @@
-{% set version = "1.0-1" %}
+{% set version = "1.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,11 +9,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/CMLS_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/CMLS/CMLS_{{ version }}.tar.gz
-  sha256: 17286316f98fbf1cb034ac2e74cb6f546c1e98ebe64213bbcdc0f939196ef86d
+  sha256: 550d9ec9248ba306877a2a5bb2f95cf0c8b5dc7f563a72eaf092a69f640193a7
 
 build:
   noarch: generic
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
